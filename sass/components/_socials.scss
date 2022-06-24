@@ -1,16 +1,18 @@
-.soc__list {
+.soc {
   display: flex;
   justify-content: center;
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .soc__item {
   height: 44px;
   width: 44px;
   margin-right: 10px;
-}
-
-.soc__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .soc__link {
@@ -23,13 +25,9 @@
   color: var(--color-icons);
 
   transition: background-color var(--time) var(--timing), color var(--time) var(--timing);
-}
-
-.soc__link:hover,
-.soc__link:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-}
-.soc__icon {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  }
 }
