@@ -26,10 +26,7 @@
   border: 1px solid var(--second-border);
   border-top: none;
   &__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(16px, 700, 2, 0.06em);
     color: var(--primary-text-color);
   }
   &__text {
@@ -54,10 +51,8 @@
 
     background-color: var(--bgc-cards);
     color: var(--background-color);
-    font-size: 18px;
 
-    line-height: 1.56;
-    letter-spacing: 0.03em;
+    @include font(18px, null, 1.56, 0.03em);
 
     transform: translateY(100%);
     transition: transform var(--time) var(--timing);

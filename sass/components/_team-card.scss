@@ -4,15 +4,12 @@
   &__title {
     margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @include font(16px, 500, 1.18, null);
   }
   &__text {
     color: var(--second-text-color);
 
-    font-size: 16px;
-    line-height: 1.18;
+    @include font(16px, null, 1.18, null);
 
     margin-bottom: 16px;
   }

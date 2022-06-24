@@ -23,9 +23,7 @@
 
   color: var(--primary-text-color);
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(null, 500, 1.14, 0.02em);
 
   transition: color var(--time) var(--timing);
 

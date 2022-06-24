@@ -21,11 +21,9 @@
     position: relative;
   }
   &__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 700, 1.14, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--background-color);
   }
@@ -37,9 +35,8 @@
 
 .activity__title,
 .team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 700, 1.17, null);
+
   text-align: center;
   margin-bottom: 50px;
 }
